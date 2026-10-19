@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="海事サイバーセキュリティにおけるTLPT演習環境構築。CSS 2026 デモポスターセッション DP-39。">
+  <meta name="theme-color" content="#091e3a">
+
+  <title>海事サイバーセキュリティにおけるTLPT演習環境構築｜CSS 2026</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: #14263e;
+      background: #f3f6fa;
+      font-family:
+        system-ui, -apple-system, "Hiragino Kaku Gothic ProN",
+        "Yu Gothic", Meiryo, sans-serif;
+      line-height: 1.8;
+    }
+
+    main {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    .label {
+      margin: 0 0 12px;
+      color: #007b9e;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .12em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(24px, 3.5vw, 40px);
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+
+    .subtitle {
+      margin: 16px 0 0;
+      color: #52647a;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 24px 0 32px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 18px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      background: white;
+      color: #091e3a;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      border-color: #091e3a;
+      background: #091e3a;
+      color: white;
+    }
+
+    .button:hover { opacity: .8; }
+
+    a:focus-visible {
+      outline: 3px solid #008bac;
+      outline-offset: 5px;
+    }
+
+    figure { margin: 0; }
+
+    .poster {
+      display: block;
+      overflow: hidden;
+      border: 1px solid #dce3ec;
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 10px 32px #091e3a0c;
+    }
+
+    .poster img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    figcaption, footer {
+      color: #52647a;
+      font-size: 13px;
+    }
+
+    figcaption { margin-top: 12px; }
+
+    footer {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid #dce3ec;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        width: calc(100% - 28px);
+        padding-top: 28px;
+      }
+
+      .subtitle { font-size: 14px; }
+
+      .button {
+        flex: 1 1 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <p class="label">CSS 2026 · DEMO POSTER SESSION · DP-39</p>
+
+      <h1>海事サイバーセキュリティにおけるTLPT演習環境構築</h1>
+
+      <p class="subtitle">
+        実船「広島丸」を活用した脅威ベース演習と
+        『制御された逸脱』に基づく設計思想
+      </p>
+    </header>
+
+    <nav aria-label="ポスターの操作">
+      <a class="button primary"
+         href="./poster.png"
+         target="_blank"
+         rel="noopener">
+        ポスターを拡大表示 ↗
+      </a>
+
+      <a class="button"
+         href="./poster.png"
+         download="maritime-cybersecurity-poster.png">
+        閲覧用PNGを保存
+      </a>
+    </nav>
+
+    <figure>
+      <a class="poster"
+         href="./poster.png"
+         target="_blank"
+         rel="noopener"
+         aria-label="ポスター全体を拡大表示（新しいタブ）">
+        <img
+          src="./poster.png"
+          width="2860"
+          height="3990"
+          fetchpriority="high"
+          decoding="async"
+          alt="海事サイバーセキュリティにおけるTLPT演習環境構築。
+               研究背景、環境設計、船内ネットワーク、
+               高速ロールバック、操作監視基盤、
+               実船演習の成果を掲載したポスター。">
+      </a>
+
+      <figcaption>
+        画像を選択すると拡大できます。
+        スマートフォンでは、拡大表示した画像を
+        ピンチ操作で拡大してご覧ください。
+      </figcaption>
+    </figure>
+
+    <footer>
+      コンピュータセキュリティシンポジウム 2026（CSS2026）
+      ｜ 展示 DP-39
+    </footer>
+  </main>
+</body>
+</html>
